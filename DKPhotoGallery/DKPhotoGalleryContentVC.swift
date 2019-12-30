@@ -101,6 +101,10 @@ open class DKPhotoGalleryContentVC: UIViewController, UIScrollViewDelegate {
     private var leftIncrementalIndicator: DKPhotoIncrementalIndicator?
     private var rightIncrementalIndicator: DKPhotoIncrementalIndicator?
     
+    open override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
     open override func viewDidLoad() {
         super.viewDidLoad()
         
