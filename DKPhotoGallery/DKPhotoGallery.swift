@@ -144,7 +144,8 @@ DKPhotoGalleryContentDataSource, DKPhotoGalleryContentDelegate {
     open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.doSetupOnce()
+        // 隐藏导航栏
+//        self.doSetupOnce()
         
         UIApplication.shared.statusBarStyle = DKPhotoGallery._preferredStatusBarStyle
         
@@ -270,7 +271,7 @@ DKPhotoGalleryContentDataSource, DKPhotoGalleryContentDelegate {
         }
     }
     
-    internal func updateContextBackground(alpha: CGFloat, animated: Bool) {
+    open func updateContextBackground(alpha: CGFloat, animated: Bool) {
         let block = {
             self.view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: alpha)
             self.currentContentVC().view.superview?.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: alpha)
