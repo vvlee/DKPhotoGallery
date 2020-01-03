@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name          = 'DKPhotoGallery'
-    s.version       = '1.0.0'
+    s.version       = '1.0.2'
     s.summary       = 'A Photo Gallery / Browser / Viewer for iOS written in Swift'
     s.homepage      = 'https://github.com/vvlee/DKPhotoGallery'
     s.license       = { :type => 'MIT', :file => 'LICENSE' }

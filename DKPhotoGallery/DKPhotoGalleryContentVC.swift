@@ -446,7 +446,7 @@ open class DKPhotoGalleryContentVC: UIViewController, UIScrollViewDelegate {
         let position = self.mainView.positionFromContentOffset()
         let offset = abs(CGFloat(self.currentIndex) - position)
         
-        if 1 - offset < 0.1 {
+        if 1 - offset < 0.5 {
             let index = Int(position.rounded())
             if index != self.currentIndex {
                 self.updateVisibleViews(index: index, scrollToIndex: false)
